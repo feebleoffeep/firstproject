@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="icon" type="image/png" href="images/logo-icon-removebg-preview.png">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <style>
+
+        .logo a {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 55px;
+            margin-right: 5px;
+            background-color: transparent;
+        }
+
+        .logo a:hover, .logo a:focus, .logo a:active {
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span class="logo">
+            <a href="/">
+                <img src="~/images/logo-icon-removebg-preview.png" alt="Logo Icon"> 
+                BIGeek
+            </a>
+        </span>
+        <nav>
+            <a href="/"> Головна </a>
+            <a href="/contacts"> Контакти</a>
+        </nav>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+    <footer class="footer bg-dark text-light mt-4 py-3">
+        <div class="container text-center">
+            <p>Микола Крутой</p>
+            <p>ІПЗ-22-1 Хмельницький національний університет</p>
+            <p>Інтернет-магазин з продажу техніки</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
