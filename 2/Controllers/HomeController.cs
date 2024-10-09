@@ -1,27 +1,21 @@
-﻿using System.Diagnostics;
+﻿using _2.Models; 
 using Microsoft.AspNetCore.Mvc;
-using _2.Models;
+using System.Collections.Generic;
 
-namespace _2.Controllers;
-
-public class HomeController : Controller
+namespace _2.Controllers
 {
-    private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
+    public class HomeController : Controller
     {
-        _logger = logger;
-    }
+        public IActionResult Index()
+        {
+            List<Product> products = new List<Product>
+            {
+                new Product { Id = 1, Name = "iPhone 14 pro", Description = "Опис iPhone", Price = 799, ImageUrl = "iphone14pro.jpg" },
+                new Product { Id = 2, Name = "MacBook Air M2", Description = "Опис MacBook", Price = 1299, ImageUrl = "macbookairm2.jpg" },
+                new Product { Id = 3, Name = "iPad Pro M2 2022", Description = "Опис iPad", Price = 499, ImageUrl = "iPad-Pro-M2-2022-12-9-spacegray-photo.jpg" }
+            };
 
-    public IActionResult Index()
-    {
-        return View();
-    }
-
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View(products);
+        }
     }
 }
-

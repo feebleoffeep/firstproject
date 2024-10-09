@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Products";
+}
+
+@foreach (var product in Model)
+{
+    <div class="product">
+        <img src="@(product.ImageUrl)" alt="@(product.Name)" class="product-img" />
+        <h2>@product.Name</h2>
+        <p>Ціна: $@product.Price</p>
+        <a href="@Url.Action("AddToCart", "Buy", new { productId = product.Id })" class="buy-btn">Купити</a>
+    </div>
+}
+
+
+
+
+
+

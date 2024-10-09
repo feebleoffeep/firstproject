@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/2.bundle.scp.css"
     },
     {
+      "Id": "/Users/koliakrutoy/Projects/2/2/wwwroot/.DS_Store",
+      "PackagePath": "staticwebassets/.DS_Store"
+    },
+    {
       "Id": "/Users/koliakrutoy/Projects/2/2/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
@@ -13,12 +17,28 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/koliakrutoy/Projects/2/2/wwwroot/images/.DS_Store",
+      "PackagePath": "staticwebassets/images/.DS_Store"
+    },
+    {
+      "Id": "/Users/koliakrutoy/Projects/2/2/wwwroot/images/iPad-Pro-M2-2022-12-9-spacegray-photo.jpg",
+      "PackagePath": "staticwebassets/images/iPad-Pro-M2-2022-12-9-spacegray-photo.jpg"
+    },
+    {
+      "Id": "/Users/koliakrutoy/Projects/2/2/wwwroot/images/iphone14pro.jpg",
+      "PackagePath": "staticwebassets/images/iphone14pro.jpg"
+    },
+    {
       "Id": "/Users/koliakrutoy/Projects/2/2/wwwroot/images/logo-icon-removebg-preview.png",
       "PackagePath": "staticwebassets/images/logo-icon-removebg-preview.png"
     },
     {
       "Id": "/Users/koliakrutoy/Projects/2/2/wwwroot/images/logo-icon.png",
       "PackagePath": "staticwebassets/images/logo-icon.png"
+    },
+    {
+      "Id": "/Users/koliakrutoy/Projects/2/2/wwwroot/images/macbookairm2.jpg",
+      "PackagePath": "staticwebassets/images/macbookairm2.jpg"
     },
     {
       "Id": "/Users/koliakrutoy/Projects/2/2/wwwroot/js/site.js",

@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Кошик";
+}
+
+@model Cart
+
+<h2>Ваш кошик</h2>
+
+@if (Model.Items.Count == 0)
+{
+    <p>Кошик порожній</p>
+}
+else
+{
+    <ul>
+        @foreach (var item in Model.Items)
+        {
+            <li>@item.Product.Name - @item.Quantity шт. - @item.Product.Price $</li>
+        }
+    </ul>
+    <p>Загальна сума: @Model.GetTotalPrice() $</p>
+}
+
+
+
+
